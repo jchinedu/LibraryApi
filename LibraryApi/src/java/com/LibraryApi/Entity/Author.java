@@ -13,7 +13,7 @@ import java.util.List;
 
 public class Author {
     @Id
-    private long id;
+    private String id;
     private String name;
     private String bio;
     private List<Book> books = new ArrayList<>();

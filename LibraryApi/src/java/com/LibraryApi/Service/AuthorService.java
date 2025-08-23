@@ -37,7 +37,7 @@ public class AuthorService {
 
     public AuthorResponseDTO updateAuthor(String id, AuthorRequestDTO dto) {
         Author author = DtoMapper.toAuthorEntity(dto);
-        author.setId(Long.parseLong(id));
+        author.setId(id);
         return DtoMapper.toAuthorResponse(repo.save(author));
     }
 
